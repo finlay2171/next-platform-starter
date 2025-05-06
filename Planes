@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flugzeug-Welt: Dein Portal zur faszinierenden Welt der Luftfahrt</title>
+    <meta name="description" content="Tauche ein in die Geschichte, Technologie und Vielfalt der Flugzeuge. Aktuelle Infos, Galerie und mehr auf Flugzeug-Welt.de.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo" aria-label="Zur Startseite von Flugzeug-Welt">
+                Flugzeug-Welt
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="#geschichte">Geschichte</a></li>
+                    <li><a href="#typen">Flugzeugtypen</a></li>
+                    <li><a href="#wie-fliegt-es">Wie fliegt ein Flugzeug?</a></li>
+                    <li><a href="#beruehmte-flugzeuge">Berühmte Flugzeuge</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Navigation öffnen/schließen">
+                <i class="fas fa-bars"></i> </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Erkunde den Himmel.<br>Entdecke die Welt der Flugzeuge.</h1>
+                <p class="subtitle">Faszinierende Einblicke in die Luftfahrt – für Enthusiasten und Neugierige.</p>
+                <a href="#entdecken" class="button">Mehr erfahren</a>
+            </div>
+        </section>
+
+        <section id="einleitung" class="content-section container">
+            <h2>Willkommen an Bord der Flugzeug-Welt!</h2>
+            <p>Flugzeuge sind Wunder der Technik und Symbole menschlichen Fortschritts. Seit den kühnen Träumen der Pioniere hat die Luftfahrt unsere Welt verändert. Begib dich mit uns auf eine Reise durch die Geschichte, lerne verschiedene Flugzeugtypen kennen und verstehe die Prinzipien des Fliegens.</p>
+        </section>
+
+        <section id="entdecken" class="card-section container">
+            <h2>Was möchtest du entdecken?</h2>
+            <div class="card-container">
+                <a href="#geschichte" class="card">
+                     <img src="images/cards/card-geschichte.jpg" alt="Historisches Flugzeug Symbol">
+                    <div class="card-text">
+                        <h3>Geschichte</h3>
+                        <p>Von den Anfängen bis heute.</p>
+                    </div>
+                </a>
+                <a href="#typen" class="card">
+                    <img src="images/cards/card-typen.jpg" alt="Icon für verschiedene Flugzeugtypen">
+                     <div class="card-text">
+                        <h3>Flugzeugtypen</h3>
+                        <p>Passagier, Fracht, Militär & mehr.</p>
+                    </div>
+                </a>
+                <a href="#wie-fliegt-es" class="card">
+                    <img src="images/cards/card-aerodynamik.jpg" alt="Icon Flügelprofil Aerodynamik">
+                     <div class="card-text">
+                        <h3>Wie fliegt es?</h3>
+                        <p>Aerodynamik einfach erklärt.</p>
+                    </div>
+                </a>
+                 <a href="#beruehmte-flugzeuge" class="card">
+                    <img src="images/cards/card-beruehmte.jpg" alt="Icon Berühmtes Flugzeug">
+                     <div class="card-text">
+                        <h3>Berühmte Flugzeuge</h3>
+                        <p>Ikonen der Luftfahrt.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="image-teaser-section">
+             <div class="container teaser-content">
+                 <h2>Visuelle Reise</h2>
+                 <p>Entdecke beeindruckende Flugzeuge in unserer Galerie.</p>
+                 <a href="#galerie" class="button secondary-button">Zur Galerie</a>
+             </div>
+         </section>
+
+         </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2023 Flugzeug-Welt</p>
+            <nav aria-label="Footer Navigation">
+                <ul>
+                    <li><a href="/impressum.html">Impressum</a></li>
+                    <li><a href="/datenschutz.html">Datenschutz</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+/* Grundlegende Resets und Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Verwendung der Google Font, Fallback zu Sans-Serif */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7; /* Etwas mehr Zeilenabstand für bessere Lesbarkeit */
+    color: #333;
+    background-color: #f8f8f8; /* Sehr leichter Hintergrund */
+    overflow-x: hidden; /* Verhindert ungewolltes horizontales Scrollen */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffffff; /* Heller Hintergrund */
+    padding: 15px 0; /* Mehr vertikaler Platz */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* Etwas stärkerer, weicherer Schatten */
+    position: sticky; /* Header bleibt beim Scrollen oben */
+    top: 0; /* Oben am Bildschirm fixieren */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em; /* Größeres Logo */
+    font-weight: 700; /* Fettschrift (dank Roboto Font-Weight 700) */
+    text-decoration: none;
+    color: #0056b3; /* Markenfarbe (dunkleres Blau) */
+}
+
+/* Navigationsstyling (für Desktop) */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px; /* Mehr Abstand zwischen Links */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500; /* Mittlere Dicke */
+    transition: color 0.3s ease;
+    position: relative; /* Für den Unterstrich-Effekt */
+}
+
+.main-nav a:hover {
+    color: #007bff;
+}
+
+/* Moderner Unterstrich-Effekt bei Hover */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Abstand vom Text */
+    left: 0;
+    width: 0; /* Startbreite 0 */
+    height: 2px;
+    background-color: #007bff; /* Farbe des Unterstrichs */
+    transition: width 0.3s ease; /* Animation der Breite */
+}
+
+.main-nav a:hover::after {
+    width: 100%; /* Breite auf 100% beim Hover */
+}
+
+
+/* Nav Toggle Button (Hamburger) - Standardmäßig auf Desktop versteckt */
+.nav-toggle {
+    display: none; /* Auf größeren Bildschirmen verstecken */
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* Hero Section Styling */
+.hero-section {
+    background: url('../images/hero-modern.jpg') no-repeat center center/cover;
+    color: white;
+    height: 70vh; /* Etwas höherer Hero-Bereich */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px; /* Padding für kleinen Screens */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Etwas dunkleres Overlay */
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Größere Überschrift */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Leichter Textschatten */
+}
+
+.hero-content .subtitle {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px; /* Mehr Padding */
+    text-decoration: none;
+    border-radius: 25px; /* Stark abgerundete Ecken (Pill-Form) */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation beim Hover */
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Leichter "Lift" Effekt */
+}
+
+/* Content Section Styling */
+.content-section {
+    padding: 60px 0; /* Mehr vertikaler Abstand */
+    background-color: #ffffff;
+    margin-bottom: 30px; /* Mehr Abstand zur nächsten Sektion */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px; /* Leichte Abrundung der Sektionsbox */
+    overflow: hidden; /* Wichtig für box-shadow */
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0056b3; /* Markenfarbe für Sektionsüberschriften */
+    font-size: 2em;
+    position: relative;
+}
+
+/* Underline Effekt für H2 */
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Abstand von der Überschrift */
+    left: 50%;
+    transform: translateX(-50%); /* Zentrieren */
+    width: 80px; /* Breite des Unterstrichs */
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+/* Card Section Styling */
+.card-section {
+     padding: 60px 0;
+     margin-bottom: 30px;
+     background-color: #e9ecef; /* Heller, abgesetzter Hintergrund */
+}
+
+.card-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0056b3;
+    font-size: 2em;
+     position: relative;
+}
+.card-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+
+.card-container {
+    display: grid; /* Nutzung von CSS Grid für flexible Anordnung */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Grid */
+    gap: 30px; /* Abstand zwischen Grid-Elementen */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Für abgerundete Ecken des Bildes */
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Stärkerer Lift-Effekt */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stärkerer Schatten */
+}
+
+.card img {
+    width: 100%;
+    height: 180px; /* Etwas höhere Kartenbilder */
+    object-fit: cover;
+    border-bottom: 1px solid #eee; /* Leichte Trennlinie zum Text */
+}
+
+.card-text {
+    padding: 15px; /* Innenabstand für den Text */
+    flex-grow: 1; /* Textbereich füllt den restlichen Platz */
+}
+
+.card-text h3 {
+    margin-top: 0; /* Abstand oben entfernen, da im card-text */
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #007bff;
+}
+
+.card-text p {
+    font-size: 1em;
+}
+
+
+/* Image Teaser Section */
+.image-teaser-section {
+    background: url('../images/galerie-teaser.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0; /* Noch mehr Platz */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.image-teaser-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Noch dunkleres Overlay */
+    z-index: -1;
+}
+
+.teaser-content h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+     position: relative;
+     /* Kein Underline-Effekt hier, sieht im Hero-Stil besser aus */
+}
+.teaser-content h2::after {
+    display: none; /* Underline für Teaser-H2 deaktivieren */
+}
+
+
+.teaser-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 300; /* Leichtere Schriftstärke */
+}
+
+.secondary-button {
+     background-color: #6c757d;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #222; /* Dunklerer Footer */
+    color: #ddd;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 15px; /* Abstand zum Copyright */
+    font-size: 0.9em;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0; /* Abstand oben entfernen */
+}
+
+footer nav ul li {
+    margin: 0 15px; /* Mehr Abstand zwischen den Links */
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: white;
+}
+
+/*-----------------------------------*/
+/* Responsivität & Mobile Navigation */
+/*-----------------------------------*/
+
+/* Media Query für Bildschirme kleiner als 768px (typisch für Handys) */
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: row; /* Logo und Toggle bleiben nebeneinander */
+        justify-content: space-between; /* Platz dazwischen */
+        padding: 10px 20px; /* Padding links/rechts für Header */
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    /* Nav Toggle Button auf kleinen Bildschirmen anzeigen */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Hauptnavigation (main-nav) auf kleinen Bildschirmen verstecken und positionieren */
+    .main-nav {
+        position: absolute;
+        top: 60px; /* Unter dem Header positionieren (Header Höhe ca. 60px) */
+        left: 0;
+        width: 100%; /* Volle Breite */
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Standardmäßig versteckt: */
+        transform: translateY(-100%); /* Oben aus dem Sichtfeld schieben */
+        transition: transform 0.3s ease-in-out; /* Sanfte Animation */
+        z-index: 999; /* Über dem Inhalt, aber unter dem Sticky Header */
+    }
+
+    /* Klasse, die per JavaScript hinzugefügt wird, um die Navigation anzuzeigen */
+    .main-nav.nav-active {
+        transform: translateY(0); /* Zurück ins Sichtfeld schieben */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Links untereinander */
+        align-items: center; /* Links zentrieren */
+        padding: 20px 0;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0; /* Vertikaler Abstand zwischen den Links */
+    }
+
+    .main-nav a {
+        font-size: 1.2em;
+        color: #333; /* Links im Menü dunkler */
+    }
+     .main-nav a::after {
+        display: none; /* Unterstrich-Effekt im mobilen Menü deaktivieren */
+    }
+
+    /* Hero Section Anpassungen */
+    .hero-section {
+        height: 60vh; /* Höhe reduzieren */
+        padding: 0 15px;
+    }
+     .hero-content h1 {
+         font-size: 2em; /* Schriftgröße anpassen */
+     }
+     .hero-content .subtitle {
+         font-size: 1em;
+     }
+
+    /* Content Section Anpassungen */
+     .content-section, .card-section, .image-teaser-section {
+         padding: 40px 0; /* Padding anpassen */
+     }
+      .container {
+          padding: 10px 15px; /* Padding links/rechts für Container */
+      }
+
+    /* Card Section Anpassungen */
+    .card-container {
+        grid-template-columns: 1fr; /* Eine Spalte auf Handys */
+        gap: 20px; /* Abstand anpassen */
+    }
+     .card {
+         width: 95%; /* Kartenbreite etwas weniger als 100% */
+         margin: 0 auto; /* Karten zentrieren */
+     }
+
+
+     /* Teaser Section Anpassungen */
+     .image-teaser-section {
+         padding: 60px 0;
+     }
+      .teaser-content h2 {
+          font-size: 2em;
+      }
+       .teaser-content p {
+           font-size: 1em;
+       }
+
+    /* Footer Anpassungen */
+    footer nav ul {
+        flex-direction: column; /* Footer Links untereinander */
+        margin-top: 10px;
+    }
+    footer nav ul li {
+        margin: 5px 0;
+    }
+
+}
+// Deine JavaScript-Datei
+
+// Warten, bis das gesamte HTML-Dokument geladen ist
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Wähle den Button zum Umschalten der Navigation aus
+    const navToggle = document.querySelector('.nav-toggle');
+
+    // Wähle das Navigationselement aus
+    const mainNav = document.querySelector('.main-nav');
+
+    // Überprüfe, ob beide Elemente gefunden wurden
+    if (navToggle && mainNav) {
+
+        // Füge einen Event-Listener zum Button hinzu, der auf 'click' reagiert
+        navToggle.addEventListener('click', function() {
+            // Wenn der Button geklickt wird, schalte die Klasse 'nav-active' beim mainNav um
+            // Wenn 'nav-active' da ist, wird es entfernt, wenn nicht, wird es hinzugefügt
+            mainNav.classList.toggle('nav-active');
+
+            // Optional: Ändere das Icon des Buttons (z.B. von Hamburger zu X)
+            // Hierfür müsstest du die Font-Awesome Klassen umschalten
+            const icon = navToggle.querySelector('i');
+            if (mainNav.classList.contains('nav-active')) {
+                icon.classList.remove('fa-bars'); // Hamburger entfernen
+                icon.classList.add('fa-times'); // X hinzufügen
+            } else {
+                icon.classList.remove('fa-times'); // X entfernen
+                icon.classList.add('fa-bars'); // Hamburger hinzufügen
+            }
+        });
+
+        // Optional: Schließe das Menü, wenn ein Link im mobilen Menü geklickt wird
+        // Das ist nützlich, damit das Menü nach der Auswahl nicht offen bleibt
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (mainNav.classList.contains('nav-active')) {
+                    mainNav.classList.remove('nav-active'); // Menü schließen
+                    // Optional: Icon zurücksetzen, falls geändert
+                     const icon = navToggle.querySelector('i');
+                     icon.classList.remove('fa-times');
+                     icon.classList.add('fa-bars');
+                }
+                 // Bei Klick auf einen Link in der mobilen Ansicht springt die Seite zum Anker
+                 // Wir verhindern das standardmäßige Verhalten nicht, damit der Sprung funktioniert
+            });
+        });
+
+    } else {
+        console.error("Nav Toggle Button oder Main Nav Element nicht gefunden!");
+    }
+
+});
+
+// Hier könnten weitere JavaScript-Funktionen folgen...
+// z.B. für eine Bildergalerie, Formularvalidierung, etc.
